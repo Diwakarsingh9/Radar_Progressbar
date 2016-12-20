@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/llforprogress"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:id="@+id/bgimg"
+                android:src="@drawable/rasbg"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible" />
+            <FrameLayout
+                android:id="@+id/switcher"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:padding="20dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/imgh"
+                    android:repeatMode="reverse"
+                    android:src="@drawable/dot" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/imgh3"
+                    android:repeatMode="reverse"
+                    android:src="@drawable/dot"
+                    android:layout_gravity="center|right" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="bottom|center"
+                    android:src="@drawable/dot"
+                    android:id="@+id/imh2" />
+            </FrameLayout>
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:id="@+id/pbimage"
+                android:src="@drawable/ras"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Searching ...."
+            android:id="@+id/txt"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+</LinearLayout>
